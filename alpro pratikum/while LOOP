@@ -1,7 +1,0 @@
-nilaiawal = 1
-while nilaiawal <= 1000 :
-    print('pengulangan ke :', nilaiawal)
-    nilaiawal += 1
-    
-    #nilaiawal = nilaiawal + 1
-    
