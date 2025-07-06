@@ -1,0 +1,64 @@
+# DICTIONARY: Unordered, Mutable, No Duplicate Keys
+# Sintaks: {key1: value1, key2: value2, ...}
+
+# Membuat dictionary
+mahasiswa = {
+    "nama": "John Doe",
+    "umur": 21,
+    "jurusan": "Informatika",
+    "ipk": 3.75
+}
+
+nilai = {
+    "matematika": 85,
+    "fisika": 90,
+    "kimia": 78
+}
+
+print(f"Dictionary mahasiswa: {mahasiswa}")
+print(f"Dictionary nilai: {nilai}")
+
+# Mengakses nilai dictionary
+print(f"Nama mahasiswa: {mahasiswa['nama']}")
+print(f"Umur mahasiswa: {mahasiswa.get('umur')}")
+print(f"Alamat mahasiswa: {mahasiswa.get('alamat', 'Tidak ada')}")
+
+# Mengubah dan menambah nilai
+mahasiswa["umur"] = 22
+mahasiswa["alamat"] = "Jakarta"
+print(f"Setelah diubah: {mahasiswa}")
+
+# Menghapus elemen
+del mahasiswa["alamat"]
+ipk = mahasiswa.pop("ipk")
+print(f"IPK yang dihapus: {ipk}")
+print(f"Setelah dihapus: {mahasiswa}")
+
+# Method dictionary yang berguna
+print(f"Keys: {list(mahasiswa.keys())}")
+print(f"Values: {list(mahasiswa.values())}")
+print(f"Items: {list(mahasiswa.items())}")
+
+# Iterasi dictionary
+print("\nIterasi dictionary:")
+for key, value in mahasiswa.items():
+    print(f"{key}: {value}")
+
+# Nested dictionary
+sekolah = {
+    "kelas_10": {
+        "siswa": 30,
+        "wali_kelas": "Pak Budi"
+    },
+    "kelas_11": {
+        "siswa": 25,
+        "wali_kelas": "Bu Sari"
+    }
+}
+
+print(f"\nNested dictionary: {sekolah}")
+print(f"Jumlah siswa kelas 10: {sekolah['kelas_10']['siswa']}")
+
+print("\n" + "=" * 60)
+print("5. PERBANDINGAN DAN KAPAN MENGGUNAKAN SETIAP STRUKTUR DATA")
+print("=" * 60)
